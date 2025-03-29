@@ -1,13 +1,249 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(252, 250, 241);
+  line-height: 1.6;
+  
 }
+
+h1{
+  font-size: 2.7rem;
+  color: rgb(52, 52, 52);
+  margin-bottom: 1rem;
+
+}
+
+h2{
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 0.8rem;
+}
+
+.header {
+  background-color:rgb(230, 179, 30);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+  
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+.header-title{
+  font-size: 1.5rem;
+  
+  color:#333;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: start;
+}
+
+.header-a {
+  text-decoration: none;
+  color:  #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+
+}
+
+.header-a:hover {
+  color: rgba(101, 101, 101, 0.9);
+}
+
+
+.header-container > div:first-of-type {
+  display: flex;
+  gap: 1rem;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 38%;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #f0f0f0;
+}
+
+body.darkMode {
+  background-color: rgb(52, 52, 52);
+  color: rgb(221, 221, 221);
+}
+
+body.darkMode .header {
+  background-color: rgb(202, 202, 202);
+}
+
+body.darkMode h1{
+  color: rgb(221, 221, 221);
+}
+
+body.darkMode .header-a{
+  color: rgb(52, 52, 52);
+}
+
+body.darkMode #darkModeToggle:hover {
+  background-color: rgb(52, 52, 52);
+  color: rgb(221, 221, 221);
+}
+
+body.darkMode .header-title{
+  color: rgb(52, 52, 52);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-title{
+    margin: 0;
+  }
+  .header-container > div:first-of-type {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  #darkModeToggle {
+    margin-bottom: 0.8rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.header {
+  animation: fadeIn 0.7s ease-out;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  max-width: 900px;
+  min-height: 100vh;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-container h1 {
+  font-size: 2.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+
+.profile {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid #333333;
+  width: 120px;
+  height: 120px;
+  margin: 1.5rem 0 0 0;
+}
+.profile:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+
+.home-p {
+  font-size: 1.2rem;
+  margin: 1rem 1rem 1rem 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  color: #333;
+}
+footer hr{
+  margin: 1rem 0;
+  border: none;
+  height: 1px;
+}
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #9b9b9b;
+  
+}
+
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  max-width: 900px;
+  min-height: 100vh;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-container h1 {
+  margin-top: 0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.about-container {
+  animation: fadeIn 0.7s ease-in;
+}
+
