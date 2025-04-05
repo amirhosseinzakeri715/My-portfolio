@@ -8,7 +8,7 @@ function About() {
             <div className="about-paragraph">
                 <p className="about-p">
                 
-                I'm a passionate computer science student and aspiring full-stack web developer with a deep love for technology and programming. Since childhood, I've been fascinated by computers and the endless possibilities they offer. Currently, I'm pursuing my bachelor's degree in Computer Science while honing my skills in web development and exploring the exciting world of artificial intelligence.                </p>  
+                I'm a passionate computer science student and aspiring full-stack web developer with a deep love for technology and programming. Since childhood, I've been fascinated by computers and the endless possibilities they offer. Currently, I'm pursuing my bachelor's degree in Computer Science while honing my skills in web development and exploring the exciting world of artificial intelligence. i'm making progress in <strong>frontend</strong> developing with React, Next.js and Tailwind              </p>  
                 <h3>
                 🛠 Skills & Technologies
                 </h3>
@@ -17,13 +17,14 @@ function About() {
                     <li className="about-li">CSS</li>
                     <li className="about-li">JavaScript</li>
                     <li className="about-li">React</li>
+                    <li className="about-li">Next.js</li>
+                    <li className="about-li">Tailwind</li>
                     <li className="about-li">Node.js</li>
                     <li className="about-li">Express</li>
                     <li className="about-li">Postgres SQL</li>
                     <li className="about-li">REST APIs</li>
                     <li className="about-li">EJS</li>
                     <li className="about-li">Git </li>
-                    <li className="about-li">React</li>
                 </ul>
                 <h3>🌱 Currently Learning </h3>
                 <ul className="about-ul">
@@ -32,7 +33,7 @@ function About() {
                     <li className="about-li">Tailwind</li>
                     <li className="about-li">Advanced React</li>
                 </ul>
-                <h3> 📫🎓 Certifications & Courses </h3>
+                <h3>🎓 Certifications & Courses </h3>
                 <ul className="about-ul">
                     <li className="about-li">The Complete 2023 Web Development Bootcamp by Dr. Angela Yu (Udemy)</li>
                     <li className="about-li">FreeCodeCamp several Courses to getting better MERN stack</li>
