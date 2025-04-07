@@ -6,7 +6,7 @@ Welcome to my personal developer portfolio — built with **React.js** to showca
 
 ## 🚀 Live Site
 
-🌐 [View Live Portfolio](https://your-portfolio-url.com)
+🌐 [View Live Portfolio](https://my-portfolio-seven-nu-60.vercel.app)
 
 ## ✨ Features
 
